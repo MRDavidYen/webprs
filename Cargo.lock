@@ -253,15 +253,6 @@ dependencies = [
 ]
 
 [[package]]
-name = "folder-webp"
-version = "0.1.0"
-dependencies = [
- "clap",
- "image",
- "webp",
-]
-
-[[package]]
 name = "gif"
 version = "0.12.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -545,6 +536,15 @@ checksum = "4bb5d8e7814e92297b0e1c773ce43d290bef6c17452dafd9fc49e5edb5beba71"
 dependencies = [
  "image",
  "libwebp-sys",
+]
+
+[[package]]
+name = "webprs"
+version = "0.1.0"
+dependencies = [
+ "clap",
+ "image",
+ "webp",
 ]
 
 [[package]]

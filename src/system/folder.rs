@@ -8,7 +8,7 @@ where
 {
     let mut images = Vec::new();
 
-    for entry in std::fs::read_dir(path).unwrap() {
+    for entry in std::fs::read_dir(path).expect("Error reading folder") {
         let entry = entry.unwrap();
         let path = entry.path();
         let path_str = path.to_str().unwrap().to_string();
@@ -23,9 +23,7 @@ where
             images.push(path_str);
         }
     }
-
-    println!("{:?}", images);
-
+    
     images
 }
 
