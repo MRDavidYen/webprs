@@ -1,5 +1,5 @@
 use core::panic;
-use std::{convert, path::Path, thread};
+use std::{path::Path, thread};
 
 #[derive(Clone)]
 pub struct ConvertOptions {

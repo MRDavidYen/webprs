@@ -13,13 +13,12 @@ pub fn convert_command(cmd: Option<&ArgMatches>) {
 
     let time_spent = std::time::Instant::now();
 
-    let current_path = std::env::current_exe().expect("Error getting current path");
-    let current_path = current_path
-        .parent()
-        .expect("Error getting current path parent");
+    let current_path = std::env::current_dir().expect("Error getting current path");
     let current_path = current_path
         .to_str()
         .expect("Error converting path to string");
+
+    println!("Current path: {}", current_path);
 
     let converted_count = crate::core::convert::convert_folder_images_to_webp(
         current_path,

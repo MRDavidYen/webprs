@@ -52,10 +52,7 @@ pub fn get_file_path_without_root_folder_and_filename<P>(path: &P) -> Option<Str
 where
     P: AsRef<Path>,
 {
-    let application_path = std::env::current_exe().expect("Error getting current path");
-    let application_path = application_path
-        .parent()
-        .expect("Error getting current path parent");
+    let application_path = std::env::current_dir().expect("Error getting current path");
 
     let relative_path = match path.as_ref().strip_prefix(application_path) {
         Ok(path) => path,
