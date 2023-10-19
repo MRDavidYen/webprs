@@ -18,5 +18,5 @@ We also provide some optional arguments
 ## Install
 You can download executable file for macOS from github release.
 
-Then unzip extract file and put `webrs` into `/usr/local/bin`.
 > For macOS user
+> Then unzip extract file and put `webrs` into `/usr/local/bin`.
