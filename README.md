@@ -20,4 +20,4 @@ You can download executable file for macOS from github release.
 
 > For macOS user
 
-> Unzip compressed file and put `webrs` into `/usr/local/bin`.
+> Unzip compressed file and put `webprs` into `/usr/local/bin`.
