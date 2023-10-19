@@ -13,10 +13,10 @@ fn main() {
                 .arg(
                     Arg::new("destination")
                         .required(false)
+                        .default_missing_value("destination")
                         .help("Path to folder with images")
                         .short('d'),
                 )
-                .arg_required_else_help(true),
         );
 
     let matches = cmd.get_matches();
