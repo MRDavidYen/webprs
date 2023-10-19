@@ -1,4 +1,4 @@
-use clap::{Arg, Command};
+use clap::{value_parser, Arg, Command};
 
 mod core;
 mod system;
@@ -17,6 +17,20 @@ fn main() {
                         .help("Path to folder with images")
                         .short('d'),
                 )
+                .arg(
+                    Arg::new("quality")
+                        .required(false)
+                        .default_missing_value("100.0")
+                        .short('q')
+                        .value_parser(value_parser!(f32)),
+                )
+                .arg(
+                    Arg::new("threads")
+                        .required(false)
+                        .default_missing_value("5")
+                        .short('t')
+                        .value_parser(value_parser!(i16)),
+                ),
         );
 
     let matches = cmd.get_matches();
