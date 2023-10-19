@@ -1,4 +1,4 @@
-# folder-webp
+# webprs
 convert image to webp format inside a folder
 
 ## How to use?
