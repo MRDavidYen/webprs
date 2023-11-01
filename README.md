@@ -16,8 +16,9 @@ We also provide some optional arguments
 ```
 
 ## Install
-You can download executable file for macOS from github release.
+You can download executable file for macOS from github releases.
+Or you can clone this project and use `cargo` to compile executable file.
 
 > For macOS user
 
-> Unzip compressed file and put `webprs` into `/usr/local/bin`.
+> Unzip compressed file or compile this project, then put `webprs` into `/usr/local/bin`.
