@@ -19,7 +19,7 @@ where
             continue;
         }
 
-        if IMAGE_EXTENSIONS.contains(&path_str.split('.').last().unwrap()) {
+        if IMAGE_EXTENSIONS.contains(&path_str.split('.').last().unwrap().to_lowercase().as_str()) {
             images.push(path_str);
         }
     }
